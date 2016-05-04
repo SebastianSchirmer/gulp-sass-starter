@@ -1,0 +1,100 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint-config-airbnb/legacy"
+    ],
+    "globals": {
+        "angular": false,
+        "Map": false,
+        "Array": false,
+        "FileReader": false,
+        "FileAPI": false,
+        "Blob": false,
+        "JSON": false,
+        "Mailcheck": false,
+        "UAParser": false,
+        "enquire": false,
+        "window": false,
+        "document": false,
+        "Config": false,
+        "navigator": false,
+        "screen": false,
+        "inject": false,
+        "atob": false,
+        "animate": false,
+        // JASMINE
+        "describe": false,
+        "it": false,
+        "xit": false,
+        "fit": false,
+        "before": false,
+        "beforeEach": false,
+        "after": false,
+        "afterEach": false,
+        "expect": false,
+        "by": false,
+        "element": false,
+        "beforeAll": false,
+        "browser": false,
+        // Protractor
+        "protractor": false,
+        // CORDOVA / IONIC
+        "cordova": false,
+        "Media": false,
+        "ionic": false,
+        "StatusBar": false,
+        "Camera": false,
+        "FileUploadOptions": false,
+        "FileTransferError": false,
+        // Stomp
+        "Stomp": false,
+        // lodash
+        "_": false,
+        // moment.js
+        "moment": false,
+        // google analytics
+        "analytics": false,
+        // google places
+        "google": false,
+        // https://github.com/leodido/i18n.phonenumbers.js
+        "leodido": false,
+        // phonegap-plugin-push
+        "PushNotification": false
+    },
+    "rules": {
+        // this option sets a specific tab width for your code
+        // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
+        "indent": [2, 4, {"SwitchCase": 1, "VariableDeclarator": 1}],
+        // specify the maximum length of a line in your program
+        // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
+        "max-len": [2, 120, 2, {
+            "ignoreUrls": true,
+            "ignoreComments": false
+        }],
+        // overwrite disallow use of console
+        "no-console": [2, { "allow": ["log", "warn", "error"] }],
+        // overwrite no use before define
+        "no-use-before-define": [2, { "functions": false }],
+        // ignore rule require or disallow a space immediately following the // or /* in a comment
+        "spaced-comment": 0,
+        // ignore rule requires to declare all vars on top of their containing scope
+        "vars-on-top": 0,
+        // ignore require function expressions to have a name
+        //"func-names": 0,
+        "wrap-iife": [2, "inside"],
+        // ignore disallow function or variable declarations in nested blocks
+        "no-inner-declarations": 0,
+        // disallow declaration of variables that are not used in the code
+        "no-unused-vars": [2, { "vars": "local", "args": "after-used", "argsIgnorePattern": "(^scope$|^element$|^attrs$)" }],
+        // disallow reassignment of function parameters
+        // disallow parameter object manipulation
+        // rule: http://eslint.org/docs/rules/no-param-reassign.html
+        "no-param-reassign": [2, { "props": false }],
+        "func-names": 0,
+        // require function expressions to have a name
+        "func-names-exclude-iife": 1,
+        "angular/log": 0
+    }
+}
